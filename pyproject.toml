@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "panos-edl-webserver"
+version = "0.1.0"
+description = "EDL hosting server, provided by DRF"
+authors = ["Calvin Remsburg <cremsburg.dev@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "panos_edl_webserver"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.2.1"
+djangorestframework = "^3.14.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+flake8 = "^6.0.0"
+ipdb = "^0.13.13"
+ipython = "^8.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
